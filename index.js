@@ -19,11 +19,11 @@ form.addEventListener("submit", (e) => {
     cvv.value
   ) {
     processing_form.style.visibility = "visible";
-    setTimeout(() => {
-    }, 3000);
-    if (hasErr == true) {
-      e.preventDefault();
-    }
+    // setTimeout(() => {
+    // }, 3000);
+  }
+  if (hasErr == true) {
+    e.preventDefault();
   }
 });
 
@@ -74,4 +74,12 @@ function setErrorFor(input, message) {
 function setSuccessFor(input) {
   const formControl = input.parentElement;
   formControl.className = "form-control success";
+}
+
+
+// Hridoy
+function validate() {
+  if (expirydate.value && expirydate.value.length == 2) {
+      expirydate.value += '/';
+  }
 }

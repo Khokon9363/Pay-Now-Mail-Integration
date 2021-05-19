@@ -13,11 +13,11 @@ form.addEventListener("submit", (e) => {
 
   if (mailid.value && mobilenumber.value && productcode.value) {
     processing_form.style.visibility = "visible";
-    setTimeout(() => {
-    }, 3000);
-    if (hasErr == true) {
-      e.preventDefault();
-    }
+    // setTimeout(() => {
+    // }, 3000);
+  }
+  if (hasErr == true) {
+    e.preventDefault();
   }
 });
 

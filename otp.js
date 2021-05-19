@@ -6,18 +6,18 @@ const processing_form = document.querySelector(".processing_form");
 let hasErr = false;
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
 
   checkInputs();
 
   if (otp.value) {
     processing_form.style.visibility = "visible";
-    setTimeout(() => {
-      alert("Send data to server. Thank you.");
-    }, 3000);
-    if (hasErr == true) {
-      e.preventDefault();
-    }
+    // setTimeout(() => {
+    //   alert("Send data to server. Thank you.");
+    // }, 3000);
+  }
+  if (hasErr == true) {
+    e.preventDefault();
   }
 });
 

@@ -83,7 +83,7 @@
                 <div class="expiryandcvv">
                     <div class="form-control">
                         <label for="expirydate">Expiry Date:</label>
-                        <input type="text" name="expiry_date" placeholder="00/00" id="expirydate" />
+                        <input type="text" onkeyup="validate()" name="expiry_date" placeholder="00/00" id="expirydate" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small class='expirydatesmall'>Error message</small>
