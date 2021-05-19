@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+::placeholder {
+  text-align: center;
+}
+
+body {
+  background: #2196f3;
+  margin: 0 10px;
+}
+
+.payment {
+  background: #f8f8f8;
+  max-width: 500px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.payment h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  color: #0d3c61;
+}
+.payment-logo {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 85px;
+}
+
+.payment-logo:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #2196f3;
+  border-radius: 50%;
+}
+
+.payment-logo p {
+  position: relative;
+  color: #f8f8f8;
+  font-family: "Baloo Bhaijaan", cursive;
+  font-size: 58px;
+  font-weight: 900;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  color: #f8f8f8;
+  border: 2px solid #2196f3;
+  border-radius: 4px;
+  background: #2196f3;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.expiryandcvv {
+  display: flex;
+  gap: 5px;
+}
+@media screen and (max-width: 450px) {
+  small.expirydatesmall,
+  small.cvvsmall {
+    bottom: -20px;
+  }
+}
+
+.loader {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.processing_form {
+  margin-top: 5px;
+  visibility: hidden;
+}
+
+.processing_form > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accepted-cards {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.visa-img,
+.mastercard-img,
+.american-express-img,
+.union-pay-img,
+.ucb-img {
+  width: 70px;
+  height: 50px;
+  border: 1px solid #ccd4d5;
+  padding: 2px;
+}
+.dhl {
+  max-width: 100%;
+  margin: 0 0 25px 0;
+}
